@@ -1,0 +1,112 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap");
+nav {
+  padding: 0 !important;
+}
+nav .nav-item .nav-link {
+  color: #000;
+  font-family: "Lora", serif;
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 14px 15px !important;
+}
+nav .nav-item .nav-link span {
+  font-family: "Poppins", sans-serif;
+  font-size: 10px;
+  font-weight: 500;
+  text-transform: none;
+  color: rgba(0, 0, 0, 0.75);
+}
+nav .nav-item .nav-link.dropdown-toggle:after {
+  border: none;
+  background: url(../images/down-arrow-ico.svg) no-repeat center center;
+  width: 11px;
+  height: 6.29px;
+}
+nav .nav-item .nav-link.show {
+  background: #0a1232;
+  color: #fff;
+}
+nav .nav-item .nav-link.show span {
+  color: rgba(255, 255, 255, 0.75);
+}
+nav .nav-item .nav-link.show.dropdown-toggle:after {
+  background: url(../images/down-arrow-ico-light.svg) no-repeat center center;
+}
+nav .nav-item .dropdown-menu.megamenu {
+  background: #0a1232;
+  color: #fff;
+  padding: 50px;
+}
+@media screen and (min-width: 992px) {
+  nav .nav-item .dropdown-menu.megamenu {
+    left: 0;
+    right: 0;
+    width: 100%;
+    margin-top: 0;
+  }
+}
+nav .nav-item .dropdown-menu.megamenu .main-category h6 {
+  font-family: "Lora", serif;
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 23px;
+}
+nav .nav-item .dropdown-menu.megamenu .main-category ul {
+  margin-bottom: 0;
+}
+nav .nav-item .dropdown-menu.megamenu .main-category ul li a {
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.7);
+  text-decoration: none;
+  line-height: 25px;
+  transition: 0.5s all;
+}
+nav .nav-item .dropdown-menu.megamenu .main-category ul li a:hover {
+  color: #f1185f;
+  text-decoration: underline;
+}
+nav .nav-item .dropdown-menu.megamenu .latest-posts {
+  border-left: solid 1px rgba(255, 255, 255, 0.3);
+  padding-left: 50px;
+}
+nav .nav-item .dropdown-menu.megamenu .latest-posts .post-box a {
+  text-decoration: none;
+}
+nav .nav-item .dropdown-menu.megamenu .latest-posts .post-box a .post-img img {
+  border-radius: 11px;
+}
+nav .nav-item .dropdown-menu.megamenu .latest-posts .post-box a .post-title {
+  font-family: "Lora", serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 25px;
+  color: #fff;
+  transition: 0.5s all;
+}
+nav .nav-item .dropdown-menu.megamenu .latest-posts .post-box a:hover .post-title {
+  color: #f1185f;
+}
+nav .nav-item .dropdown-menu.megamenu.show {
+  animation: slideInDown; /* referring directly to the animation's @keyframe declaration */
+  animation-duration: 0.5s;
+}
+@keyframes slideInDown {
+  0% {
+    transform: translate3d(0, -5%, 0);
+    opacity: 0;
+  }
+  100% {
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+  }
+}
+@media screen and (min-width: 992px) {
+  nav .nav-item.has-megamenu {
+    position: static !important;
+  }
+}/*# sourceMappingURL=main.css.map */
